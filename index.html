@@ -47,10 +47,87 @@
                     <p>Created by <a href="mailto:mr.changyuheng@gmail.com">Chang Yu-heng (張昱珩)</a></p>
                     <p>2014-07-18</p>
                     <p>
-                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="assets/images/cc/cc.svg" /></a>
-                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="assets/images/cc/by.svg" /></a>
-                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="assets/images/cc/sa.svg" /></a>
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width: 0;" src="assets/images/cc/cc.svg" /></a>
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width: 0;" src="assets/images/cc/by.svg" /></a>
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width: 0;" src="assets/images/cc/sa.svg" /></a>
                     </p>
+                </section>
+
+                <section>
+                    <section>
+                        <h1><a href="http://nvie.com/posts/a-successful-git-branching-model/">Git Flow</a></h1>
+                        <h3>A successful Git branching model</h3>
+                        <h5>modified version</h5>
+                    </section>
+                    <section>
+                        <h2>Branches</h2>
+                        <ul>
+                            <li>Main branches</li>
+                            <ul>
+                                <li>Production/release</li>
+                                對應到某個專案 (某塊板子) 的 release branch
+                                <li>Staging</li>
+                                對應到某個專案 (某塊板子) 的 dev branch
+                            </ul>
+                            <li>Supporting branches</li>
+                            <ul>
+                                <li>Features/Hotfixes...whatever</li>
+                                從 staging 分支出來的開發環境
+                            </ul>
+                        </ul>
+                    </section>
+                    <section data-background="assets/images/branching-model/dev.png" data-background-size="contain">
+                    </section>
+                    <section data-background="assets/images/branching-model/fb.png" data-background-size="contain">
+                    </section>
+                    <section>
+                        <h2>Useful tool</h2>
+                        <ul><li><a href="https://github.com/FredrikNoren/ungit">ungit</a></li></ul>
+                    </section>
+                    <section>
+                        <p>The model is flexible, just applying in your own way.</p>
+                        <p>Read more: <a href="http://ihower.tw/blog/archives/5140">Git flow 開發流程</a></p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>GitLab</h1>
+                        <h3>Self-hosted Git repository management</h3>
+                    </section>
+                    <section>
+                        <p>The term "self-hosted" means to you everyone.</p>
+                    </section>
+                    <section>
+                        <h2>Creating a group</h2>
+                        <ul>
+                            <li>For what?</li>
+                            <li>Who's the member?</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Creating a repository</h2>
+                        <ul>
+                            <li>Public or private?</li>
+                            <li>Permissions setup</li>
+                            <li>Any CLI tool?</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Workflow</h2>
+                        <ul>
+                            <li>The project maintainers get Master access and the regular developers get Developer access.</li>
+                            <li>The maintainers mark the authoritative branches as 'Protected'.</li>
+                            <li>The developers push feature branches to the project and create merge requests to have their feature branches reviewed and merged into one of the protected branches.</li>
+                            <li>Only users with Master access can merge changes into a protected branch.</li>
+                        </ul>
+                        <p>Read more: <a href="https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/workflow/authorization_for_merge_requests.md">Authorization for Merge requests</a></p>
+                    </section>
+                    <section>
+                        <p>It's free and no pain to use it in your own way!</p>
+                    </section>
+                </section>
+                <section>
+                    <h1>Discussion/Q&A</h1>
                 </section>
             </div>
 

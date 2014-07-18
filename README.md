@@ -1,1 +1,1 @@
-# Revision Control Using Git Slides
+# Git Flow on GitLab Slides
